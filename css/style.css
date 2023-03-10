@@ -628,15 +628,15 @@ img {
 
 .site-footer-socials {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 .site-footer-socials-heading {
     width: 160px;
     margin: 0;
-    font-style: 18px;
-    line-height: 23;
+    font-size: 18px;
+    line-height: 23px;
     font-weight: 500;
 }
 
