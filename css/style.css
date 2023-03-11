@@ -143,14 +143,18 @@ img {
 }
 
 .global-search-form-input {
-    padding-top: 13px;
+    padding-top: 15px;
     padding-right: 20px;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     padding-left: 40px;
     border: 0;
     border-radius: 60px;
     font-size: 14px;
     line-height: normal;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px center;
 }
 
 /* LANG TOGGLE */
@@ -181,12 +185,14 @@ img {
 .sitenav {
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-bottom: 40px;
     font-size: 18px;
     font-weight: normal;
     line-height: normal;
     border-bottom: 1px solid #d1d1d1;
-    
+}
+
+.sitenav:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 .sitenav-list {
@@ -336,6 +342,10 @@ img {
     margin: 60px 75px;
     border-radius: 10px;
     background-color: #ffd7ba;
+    background-image: url(../img/Group35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .notification-cta-text {
     font-family: "Rubik", "Arial", sans-serif;
@@ -469,6 +479,7 @@ img {
 /* SITEBAR NEWS CARD */
 .sitebar-news-card {
     padding: 20px;
+    margin-bottom: 10px;
     border-radius: 15px;
     background-color: #f6f6f6;
 }
@@ -538,7 +549,7 @@ img {
 
 .sitebar-ad-img {
     width: 393px;
-    height: 338px;
+    height: 553px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -661,4 +672,114 @@ img {
     width: 25px;
     height: 25px;
     object-fit: contain;
+}
+
+
+/* FORM */
+.form-groups-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-groups-wrapper:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-groups-wrapper .form-group {
+    width: calc(50% - 5px);
+    margin-bottom: 0;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.form-field-textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+
+/* DIFINITIONS CARD */
+.difinition-card {
+    padding: 20px 25px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    color: #000;
+}
+
+.difinition-card-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.difinition-card-item:not(:last-child) {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.difinition-card-title {
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.difinition-card-value {
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+/* CONTACT PAGE */
+.contact-page-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #000;
+}
+
+.contact-page-contant {
+    display: flex;
+}
+
+.contact-page-form {
+    display: flex;
+    flex-direction: column;
+    width: 696px;
+}
+
+.contact-page-form-submit {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.contact-page-info {
+    width: 494px;
+    margin-left: 10px;
+}
+
+
+/* RETINA BGS */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .notification-cta {
+        background-image: url(../img/Group35@2x.jpg);
+    }
 }
