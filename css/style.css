@@ -549,11 +549,17 @@ img {
 
 .sitebar-ad-img {
     width: 393px;
-    height: 553px;
+    height: 338px;
     object-fit: cover;
     border-radius: 15px;
 }
 
+.new-list-sitebar-ad-img {
+    width: 393px;
+    height: 553px;
+    object-fit: cover;
+    border-radius: 15px;
+}
 
 /* SITE FOOTER */
 .site-footer {
